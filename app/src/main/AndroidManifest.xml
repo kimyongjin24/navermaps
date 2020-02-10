@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kimyong.navermaps">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="동명대 승차"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".KimhaeActivity" />
+        <activity android:name=".Ulsan2Activity" />
+        <activity android:name=".Ulsanbang1Activity" />
+        <activity android:name=".Changwon2Activity" />
+        <activity android:name=".Changwon1Activity" />
+        <activity android:name=".Subway2Activity" />
+        <activity android:name=".Subway1Activity" />
+        <activity android:name=".Un" />
+        <activity android:name=".Sub2Activity" />
+        <activity android:name=".Sub1Activity" />
+        <activity android:name=".intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="z95oa7n2vf" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9519759211663298~4695071445"/>
+    </application>
+
+</manifest>

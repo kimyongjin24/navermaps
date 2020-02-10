@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Changwon1Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/changwon12"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/changwon11"/>
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/changwon1"
+        android:name="com.naver.maps.map.MapFragment"
+        app:navermap_latitude="35.236031"
+        app:navermap_longitude="128.667824"
+        app:navermap_zoom="11"/>
+
+</LinearLayout>

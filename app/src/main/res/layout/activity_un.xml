@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Un">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:text="*토요일 : 08 :00 ~ 14 : 00까지 : 15분간격\n*휴일 :(일요일,국경일,임시공휴일):운행휴무\n*방학중 : 08:00~17:00까지 : 20분간격 운행"
+        android:textColor="#FF0000"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*셔틀버스 운행구간\n학교출발-UN로타리-대연동사거리-경성대앞-학교도착"
+        android:textSize="18dp"
+        android:textColor="#FF0000"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/timetable"
+        android:scaleType="fitXY"/>
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:name="com.naver.maps.map.MapFragment"
+        app:navermap_latitude="35.130922"
+        app:navermap_longitude="129.092436"
+        app:navermap_zoom="16"/>
+
+
+</LinearLayout>

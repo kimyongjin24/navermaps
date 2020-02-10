@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ulsan2Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ulsan22"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ulsan24"/>
+
+
+
+
+    <fragment android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ulsan2"
+        android:name="com.naver.maps.map.MapFragment"
+        app:navermap_latitude="35.549346"
+        app:navermap_longitude="129.308114"
+        app:navermap_zoom="11"/>
+
+</LinearLayout>
